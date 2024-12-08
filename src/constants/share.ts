@@ -1,16 +1,16 @@
-import product1 from "@/public/product1.png";
-import product2 from "@/public/product2.png";
-import product3 from "@/public/product3.png";
-import product4 from "@/public/product4.png";
-import product5 from "@/public/product5.png";
-import product6 from "@/public/product6.png";
-import product7 from "@/public/product6.png";
-import product8 from "@/public/product6.png";
-import product9 from "@/public/product6.png";
-import product10 from "@/public/product6.png";
-import product11 from "@/public/product6.png";
-import product12 from "@/public/product6.png";
-import rating from "@/public/Star.png";
+import product1 from "../../public/product1.png";
+import product2 from "../../public/product2.png";
+import product3 from "../../public/product3.png";
+import product4 from "../../public/product4.png";
+import product5 from "../../public/product5.png";
+import product6 from "../../public/product6.png";
+import product7 from "../../public/product6.png";
+import product8 from "../../public/product6.png";
+import product9 from "../../public/product6.png";
+import product10 from "../../public/product6.png";
+import product11 from "../../public/product6.png";
+import product12 from "../../public/product6.png";
+import rating from "../../public/Star.png";
 
 export const foods = [
   {

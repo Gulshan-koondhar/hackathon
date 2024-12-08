@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import React from "react";
-import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
+import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
 import Hero from "@/components/Hero";
 
 const page = () => {

@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import coffee from "../public/Coffee.png";
+import coffee from "../../public/Coffee.png";
 import FoodCard from "./FoodCard";
 
 interface IProps {

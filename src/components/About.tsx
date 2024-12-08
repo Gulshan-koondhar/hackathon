@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Great_Vibes } from "next/font/google";
 const great_vibe = Great_Vibes({ weight: ["400"], subsets: ["latin"] });
-import image1 from "../public/unsplash_fdlZBWIP0aM.png";
-import image2 from "../public/unsplash_jpkfc5_d-DI.png";
-import image3 from "../public/unsplash_mAQZ3X_8_l0.png";
+import image1 from "../../public/unsplash_fdlZBWIP0aM.png";
+import image2 from "../../public/unsplash_jpkfc5_d-DI.png";
+import image3 from "../../public/unsplash_mAQZ3X_8_l0.png";
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import footerImg from "../public/unsplash_CLMpC9UhyTo (1).png";
+import footerImg from "../../public/unsplash_CLMpC9UhyTo (1).png";
 
 import { Facebook, History, Instagram, Twitter, Youtube } from "lucide-react";
 const Footer = () => {

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import image from "../public/cata4.png";
-import imag1 from "../public/unsplash_lP5MCM6nZ5A (1).png";
-import yogurt from "../public/yougurt.png";
-import product3 from "../public/product3.png";
-import image1 from "../public/unsplash_tzl1UCXg5Es (1).png";
-import image2 from "../public/unsplash_mmnKI8kMxpc (1).png";
+import image from "../../public/cata4.png";
+import imag1 from "../../public/unsplash_lP5MCM6nZ5A (1).png";
+import yogurt from "../../public/yougurt.png";
+import product3 from "../../public/product3.png";
+import image1 from "../../public/unsplash_tzl1UCXg5Es (1).png";
+import image2 from "../../public/unsplash_mmnKI8kMxpc (1).png";
 
 import { Great_Vibes } from "next/font/google";
 const great_vibe = Great_Vibes({ weight: ["400"], subsets: ["latin"] });

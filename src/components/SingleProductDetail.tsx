@@ -12,7 +12,7 @@ import {
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-import rating from "@/public/Rating.png";
+import rating from "../../public/Rating.png";
 
 const inter = Inter({ subsets: ["latin"] });
 const SingleProductDetail = () => {

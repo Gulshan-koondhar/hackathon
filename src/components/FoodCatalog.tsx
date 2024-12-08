@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import img from "../public/cata1.png";
-import img1 from "../public/cata2.png";
-import img2 from "../public/cata3.png";
-import img3 from "../public/cata4.png";
-import leaf from "../public/leaf.png";
+import img from "../../public/cata1.png";
+import img1 from "../../public/cata2.png";
+import img2 from "../../public/cata3.png";
+import img3 from "../../public/cata4.png";
+import leaf from "../../public/leaf.png";
 
 import { Great_Vibes } from "next/font/google";
 const great_vibe = Great_Vibes({ weight: ["400"], subsets: ["latin"] });

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../public/product6.png";
+import image from "../../public/product6.png";
 
 export default function LatestProducts() {
   // Static data for the products and tags

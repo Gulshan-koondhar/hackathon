@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import React from "react";
-import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
-import blogImg from "../../../public/unsplash_CLMpC9UhyTo (1).png";
+import banner from "../../../../public/unsplash_4ycv3Ky1ZZU.png";
+import blogImg from "../../../../public/unsplash_CLMpC9UhyTo (1).png";
 const page = () => {
   return (
     <div className="max-w-screen-xl mx-auto">

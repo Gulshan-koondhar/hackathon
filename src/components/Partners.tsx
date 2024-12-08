@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import bakery from "../public/image 59.png";
-import bistro from "../public/image 57.png";
-import wolfcoffee from "../public/image 58.png";
-import fork from "../public/image 56.png";
-import bakery1 from "../public/image 60.png";
-import resturant from "../public/image 2.png";
+import bakery from "../../public/image 59.png";
+import bistro from "../../public/image 57.png";
+import wolfcoffee from "../../public/image 58.png";
+import fork from "../../public/image 56.png";
+import bakery1 from "../../public/image 60.png";
+import resturant from "../../public/image 2.png";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });

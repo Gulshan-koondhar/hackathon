@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
-import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
-import foodImage from "../../public/Rectangle 8874.png";
-import mainFoodImage from "../../public/unsplash_-GFCYhoRe48 (1).png";
+import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
+import foodImage from "../../../public/Rectangle 8874.png";
+import mainFoodImage from "../../../public/unsplash_-GFCYhoRe48 (1).png";
 import { foods } from "@/constants/share";
 import React from "react";
 import Details from "@/components/Details";
