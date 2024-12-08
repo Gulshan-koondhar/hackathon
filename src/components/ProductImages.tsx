@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "@/public/Rectangle 8883.png";
-import image2 from "@/public/Rectangle 8884.png";
-import image3 from "@/public/Rectangle 8885.png";
-import image4 from "@/public/Rectangle 8886.png";
-import image5 from "@/public/Rectangle 8887.png";
+import image1 from "../public/Rectangle 8883.png";
+import image2 from "../public/Rectangle 8884.png";
+import image3 from "../public/Rectangle 8885.png";
+import image4 from "../public/Rectangle 8886.png";
+import image5 from "../public/Rectangle 8887.png";
 
 const ProductImages = () => {
   return (

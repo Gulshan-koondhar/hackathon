@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import image from "@/public/unsplash_bpPTlXWTOvg.png";
-import image1 from "@/public/420.png";
-import chefs from "@/public/Group.png";
-import foodicon from "@/public/Group (1).png";
-import spoon from "@/public/Group (2).png";
-import pizza from "@/public/Group (3).png";
+import image from "../public/unsplash_bpPTlXWTOvg.png";
+import image1 from "../public/420.png";
+import chefs from "../public/Group.png";
+import foodicon from "../public/Group (1).png";
+import spoon from "../public/Group (2).png";
+import pizza from "../public/Group (3).png";
 
 const Details = () => {
   return (

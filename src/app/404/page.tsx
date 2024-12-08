@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import banner from "@/public/unsplash_4ycv3Ky1ZZU.png";
+import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
 
 export default function notFound() {
   return (

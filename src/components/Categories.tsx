@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import image from "@/public/Rectangle 8879.png";
+import image from "../public/Rectangle 8879.png";
 import { Inter } from "next/font/google";
 import { CircleArrowRight } from "lucide-react";
 import PriceFilter from "./PriceFilter";

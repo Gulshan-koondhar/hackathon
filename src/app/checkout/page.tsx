@@ -1,9 +1,10 @@
 import React from "react";
-import checkout from "@/public/Rectangle 8933.png";
+import checkout from "../../public/Rectangle 8933.png";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import banner from "@/public/unsplash_4ycv3Ky1ZZU.png";
+import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
+
 const page = () => {
   return (
     <div className="container mx-auto">

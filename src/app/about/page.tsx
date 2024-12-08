@@ -1,16 +1,16 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import React from "react";
-import banner from "@/public/unsplash_4ycv3Ky1ZZU.png";
+import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
 import { Play } from "lucide-react";
-import third from "@/public/unsplash_3iexvMShGfQ.png";
+import third from "../../public/unsplash_3iexvMShGfQ.png";
 import Image from "next/image";
-import yogurt from "@/public/yougurt.png";
-import lemon from "@/public/lemon.png";
-import pasta from "@/public/pasta.png";
-import coffee from "@/public/Coffee (1).png";
-import person from "@/public/Person.png";
-import student from "@/public/Student.png";
+import yogurt from "../../public/yougurt.png";
+import lemon from "../../public/lemon.png";
+import pasta from "../../public/pasta.png";
+import coffee from "../../public/Coffee (1).png";
+import person from "../../public/Person.png";
+import student from "../../public/Student.png";
 const page = () => {
   return (
     <div>

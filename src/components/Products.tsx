@@ -2,7 +2,7 @@ import React from "react";
 import { products } from "@/constants/share";
 import Card from "./Card";
 import { Search } from "lucide-react";
-import pagination from "@/public/pagination.png";
+import pagination from "../public/pagination.png";
 import { Inter } from "next/font/google";
 import Categories from "./Categories";
 import Image from "next/image";

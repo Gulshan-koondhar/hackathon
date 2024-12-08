@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "@/public/hero.png";
+import hero from "../public/hero.png";
 import Image from "next/image";
 import { Great_Vibes } from "next/font/google";
 const great_vibe = Great_Vibes({ weight: ["400"], subsets: ["latin"] });

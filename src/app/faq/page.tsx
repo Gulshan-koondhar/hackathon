@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import React, { useState } from "react";
-import banner from "@/public/unsplash_4ycv3Ky1ZZU.png";
+import banner from "../../public/unsplash_4ycv3Ky1ZZU.png";
 
 const faqData = [
   {
