@@ -1,13 +1,13 @@
+import React from "react";
+
 import Link from "next/link";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
 
-export default function notFound() {
+export default function NotFound() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Background Section */}
-
       {/* Header Section */}
       <Header />
       <Hero image={banner} heading="404 Error" path="404" />

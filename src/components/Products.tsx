@@ -6,6 +6,7 @@ import pagination from "../../public/pagination.png";
 import { Inter } from "next/font/google";
 import Categories from "./Categories";
 import Image from "next/image";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 const Products = () => {
   return (
@@ -14,13 +15,15 @@ const Products = () => {
         <div className="flex flex-wrap  items-center gap-3">
           {products.map((product, i) => (
             <div key={i}>
-              <Card
-                name={product.name}
-                image={product.image}
-                dprice={product.dprice}
-                aprice={product.aprice}
-                sell={product.sell}
-              />
+              <Link href={`/shop/${product.name}`}>
+                <Card
+                  name={product.name}
+                  image={product.image}
+                  dprice={product.dprice}
+                  aprice={product.aprice}
+                  sell={product.sell}
+                />
+              </Link>
             </div>
           ))}
         </div>

@@ -3,21 +3,20 @@ import Link from "next/link";
 import React from "react";
 import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="max-w-screen-xl mx-auto">
       {/* Header */}
-      <header className="relative bg-black">
-        {/* Background Image */}
-        <div>
-          {/* Navbar */}
-          <Header />
+      {/* Background Image */}
+      <div>
+        {/* Navbar */}
+        <Header />
 
-          {/* Centered Text */}
-          <Hero image={banner} heading="Sign Up" path="SignUp" />
-        </div>
-      </header>
+        {/* Centered Text */}
+        <Hero image={banner} heading="Sign Up" path="SignUp" />
+      </div>
       {/* Signin Form */}
       <section className="py-16">
         <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
@@ -74,7 +73,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      ;
+      <Footer />
     </div>
   );
 };

@@ -9,7 +9,7 @@ import image3 from "../../public/unsplash_mAQZ3X_8_l0.png";
 const About = () => {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <section className="bg-black px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
+      <section className="bg-black px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-6">
         {/* Heading */}
         <div className="text-white w-full md:w-[50%]">
           <h1

@@ -16,7 +16,7 @@ const items = [
 ];
 const FoodCatalog = () => {
   return (
-    <section className="max-w-screen-xl mx-auto bg-black text-white py-16 px-20">
+    <section className="max-w-screen-xl mx-auto bg-black text-white py-6 px-10">
       <div className="container mx-auto text-center">
         {/* Title */}
         <h1
@@ -60,7 +60,7 @@ const FoodCatalog = () => {
             </div>
           ))}
         </div>
-        <div className="absolute right-11 top-[1400px]">
+        <div className="absolute sm:-right-0 sm:top-[1400px] md:top-[1900px] lg:top-[1500px] xl:hidden">
           <Image src={leaf} alt="" width={300} height={100} />
         </div>
       </div>

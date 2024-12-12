@@ -13,6 +13,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import rating from "../../public/Rating.png";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 const SingleProductDetail = () => {
@@ -65,9 +66,12 @@ const SingleProductDetail = () => {
             </div>
           </div>
           <div>
-            <button className="flex gap-1 bg-[#FF9F0D] px-4 py-2 text-white">
+            <Link
+              href="/checkout"
+              className="flex gap-1 bg-[#FF9F0D] px-4 py-2 text-white"
+            >
               <ShoppingBag /> Add to Cart
-            </button>
+            </Link>
           </div>
         </div>
       </div>

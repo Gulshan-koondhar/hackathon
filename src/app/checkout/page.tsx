@@ -7,7 +7,7 @@ import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
 
 const page = () => {
   return (
-    <div className="container mx-auto">
+    <div className="max-w-screen-xl mx-auto">
       {/* Header */}
       <Header />
       <Hero image={banner} heading="Checkout" path="Checkout" />

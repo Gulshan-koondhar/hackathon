@@ -12,8 +12,8 @@ const great_vibe = Great_Vibes({ weight: ["400"], subsets: ["latin"] });
 const WhyChooseus = () => {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div className="bg-black p-4 ">
-        <div className="flex flex-col md:flex-row gap-2">
+      <div className="bg-black px-10 py-6">
+        <div className="flex flex-col md:flex-row gap-2 sm:mx-10 md:mx-14">
           {/* Left Side */}
           <div className="space-y-2 flex-1">
             <div className="flex items-end gap-2">
