@@ -15,20 +15,30 @@ const page = () => {
     <main>
       <Header />
       <Hero image={banner} heading="Our Menu" path="Menu" />
-      <Menu foodImg={foodImage} heading="Starter Menu" foods={foods} />
+      <Menu
+        foodImg={foodImage}
+        heading="Starter Menu"
+        foods={foods}
+        Classname="sm:flex-row"
+      />
       <Menu
         foodImg={mainFoodImage}
         heading="Main Course"
         foods={foods}
-        ClassName="flex-row-reverse"
+        Classname="sm:flex-row-reverse"
       />
       <Details />
-      <Menu foodImg={foodImage} heading="Starter Menu" foods={foods} />
+      <Menu
+        foodImg={foodImage}
+        heading="Starter Menu"
+        foods={foods}
+        Classname="sm:flex-row"
+      />
       <Menu
         foodImg={mainFoodImage}
         heading="Main Course"
         foods={foods}
-        ClassName="flex-row-reverse"
+        Classname="sm:flex-row-reverse"
       />
       <Partners />
       <Footer />

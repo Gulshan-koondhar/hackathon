@@ -25,7 +25,7 @@ export default function Home() {
         <Details />
         <HomeMenu />
         <HomeChef />
-        <Testimonials />
+        <Testimonials classname="bg-black text-white" />
         <ActiveProcess />
         <Blog />
       </main>

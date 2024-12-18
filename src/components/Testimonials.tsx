@@ -7,9 +7,9 @@ import quotes from "@/../public/Quotes.png";
 import ystar from "@/../public/star - Copy.png";
 import wstar from "@/../public/star - Copy (1).png";
 import leaf from "@/../public/unsplash_Ioq6qEibtbU.png";
-const Testimonials = () => {
+const Testimonials = ({ classname }: { classname: string }) => {
   return (
-    <section className="max-w-screen-xl mx-auto bg-black py-6 px-10 text-white">
+    <section className={`max-w-screen-xl mx-auto  py-6 px-10 ${classname}`}>
       <div className="max-w-screen-lg mx-auto">
         <div>
           <h1 className={`${great_vibe.className} text-[#FF9F0D] text-3xl`}>
@@ -19,7 +19,7 @@ const Testimonials = () => {
             What our client are saying
           </h2>
         </div>
-        <div className="flex flex-col items-center gap-10 justify-center max-w-screen-md mx-auto bg-white relative px-5 sm:px-20 py-4">
+        <div className="flex flex-col items-center gap-10 justify-center max-w-screen-md mx-auto bg-white  shadow-2xl relative px-5 sm:px-20 py-4">
           <div className="mb-5">
             <Image
               src={client}

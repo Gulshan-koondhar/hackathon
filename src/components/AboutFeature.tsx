@@ -27,11 +27,11 @@ const AboutFeature = () => {
         </div>
       </section>
       <section className="text-black bg-white">
-        <div className="max-w-screen-xl px-3 py-10 mx-auto">
+        <div className="max-w-screen-lg px-3 py-10 mx-auto">
           <div className="flex flex-wrap">
             {/* Feature 1 */}
             <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 flex flex-col items-center rounded-lg overflow-hidden">
+              <div className="h-full flex flex-col items-center rounded-lg overflow-hidden">
                 <Image
                   className="object-cover object-center"
                   src={student}
@@ -44,7 +44,7 @@ const AboutFeature = () => {
                   <h1 className="title-font text-lg font-medium text-black mb-2 text-bold text-center">
                     BEST CHEF
                   </h1>
-                  <p className="leading-relaxed mb-3 text-center text-black">
+                  <p className="leading-relaxed mb-3 text-center text-black font-normal font-helvetica text-[16px] text-[#333333]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque diam pellentesque bibendum non dui volutpat.
                   </p>
@@ -54,7 +54,7 @@ const AboutFeature = () => {
 
             {/* Feature 2 */}
             <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 flex flex-col items-center rounded-lg overflow-hidden">
+              <div className="h-full flex flex-col items-center rounded-lg overflow-hidden">
                 <Image
                   className=" object-cover object-center"
                   src={coffee}
@@ -77,7 +77,7 @@ const AboutFeature = () => {
 
             {/* Feature 3 */}
             <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 flex flex-col items-center rounded-lg overflow-hidden">
+              <div className="h-full flex flex-col items-center rounded-lg overflow-hidden">
                 <Image
                   className=" object-cover object-center"
                   src={person}

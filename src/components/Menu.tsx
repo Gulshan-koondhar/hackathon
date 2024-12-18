@@ -6,7 +6,7 @@ import FoodCard from "./FoodCard";
 interface IProps {
   foodImg: string | StaticImageData;
   heading: string;
-  ClassName?: string;
+  Classname?: string;
   foods: {
     foodName: string;
     foodDesc: string;
@@ -19,7 +19,7 @@ const Menu = (props: IProps) => {
   return (
     <div className="max-w-screen-lg py-12 mx-auto">
       <div
-        className={`flex flex-col sm:flex-row gap-10 justify-around items-center ${props.ClassName}`}
+        className={`flex flex-col  gap-10 justify-around items-center ${props.Classname}`}
       >
         <div className="">
           <Image

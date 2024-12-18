@@ -5,6 +5,10 @@ import banner from "../../../public/unsplash_4ycv3Ky1ZZU.png";
 
 import AboutHero from "@/components/AboutHero";
 import AboutFeature from "@/components/AboutFeature";
+import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+import FoodMenu from "@/components/FoodMenu";
+import TeamMembers from "@/components/TeamMembers";
 const page = () => {
   return (
     <div>
@@ -17,6 +21,10 @@ const page = () => {
 
       {/* Third Section: Why Choose Us */}
       <AboutFeature />
+      <TeamMembers />
+      <Testimonials classname="bg-white text-black" />
+      <FoodMenu />
+      <Footer />
     </div>
   );
 };

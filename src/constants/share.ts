@@ -39,6 +39,57 @@ export const foods = [
   },
 ];
 
+export const aboutFoods = [
+  {
+    foodName: "Alder Grilled Chinook Salmon",
+    foodDesc: "Toasted French bread topped with romano, cheddar",
+    cal: 560,
+    price: 32,
+  },
+  {
+    foodName: "Berries and creme tart",
+    foodDesc: "Gorgonzola, ricotta, mozzarella, taleggio",
+    cal: 700,
+    price: 43,
+  },
+  {
+    foodName: "Tormentoso Bush Pizza Pintoage",
+    foodDesc: "Ground cumin, avocados, peeled and cubed",
+    cal: 1000,
+    price: 14,
+  },
+  {
+    foodName: "Spicy Vegan Potato Curry",
+    foodDesc: "Spreadable cream cheese, crumbled blue cheese",
+    cal: 560,
+    price: 35,
+  },
+  {
+    foodName: "Alder Grilled Chinook Salmon",
+    foodDesc: "Toasted French bread topped with romano, cheddar",
+    cal: 560,
+    price: 32,
+  },
+  {
+    foodName: "Berries and creme tart",
+    foodDesc: "Gorgonzola, ricotta, mozzarella, taleggio",
+    cal: 700,
+    price: 43,
+  },
+  {
+    foodName: "Tormentoso Bush Pizza Pintoage",
+    foodDesc: "Ground cumin, avocados, peeled and cubed",
+    cal: 1000,
+    price: 14,
+  },
+  {
+    foodName: "Spicy Vegan Potato Curry",
+    foodDesc: "Spreadable cream cheese, crumbled blue cheese",
+    cal: 560,
+    price: 35,
+  },
+];
+
 export const cartProducts = [
   {
     name: "Product 1",

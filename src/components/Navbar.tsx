@@ -45,6 +45,7 @@ const Navbar = ({ classname }: { classname: string }) => {
             <Link href="/signup">Sign Up</Link>
             <Link href="/cart">Cart</Link>
             <Link href="/checkout">Checkout</Link>
+            <Link href="/chef">Chefs</Link>
           </div>
         ) : (
           ""
@@ -57,7 +58,7 @@ const Navbar = ({ classname }: { classname: string }) => {
         } ${inter.className} flex`}
         href="/about"
       >
-        About <ChevronDown size={20} className="mt-1" />
+        About
       </Link>
 
       <Link
