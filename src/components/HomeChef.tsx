@@ -7,6 +7,7 @@ import chef3 from "@/../public/Rectangle 8863 (3).png";
 import chef4 from "@/../public/Rectangle 8863 (4).png";
 import ChefCard from "./ChefCard";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 const chefs = [
@@ -58,11 +59,12 @@ const HomeChef = () => {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <button
+          <Link
+            href="/chef"
             className={`border border-[#FF9F0D] px-5 py-2 rounded-3xl font-normal text-[16px] ${inter.className}`}
           >
             See more
-          </button>
+          </Link>
         </div>
       </div>
     </section>
