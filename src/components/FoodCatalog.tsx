@@ -17,7 +17,7 @@ const items = [
 const FoodCatalog = () => {
   return (
     <section className="max-w-screen-xl mx-auto bg-black text-white py-6 px-10">
-      <div className="container mx-auto text-center">
+      <div className="text-center">
         {/* Title */}
         <h1
           className={`${great_vibe.className} text-center text-[#FF9F0D] text-3xl`}

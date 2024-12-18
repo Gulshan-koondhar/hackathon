@@ -1,13 +1,23 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { Inter } from "next/font/google";
-import { Search, ShoppingBag, UserRound } from "lucide-react";
+import { Menu, ShoppingBag, UserRound } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Profile from "./Profile";
+import Navbar from "./Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const Header = () => {
   const pathname = usePathname();
+  const [profileActive, setProfileActive] = useState(false);
+  const handleProfile = () => {
+    setProfileActive(!profileActive);
+  };
+  const [showMenu, setShowMenu] = useState(false);
+  const hanldeMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className="max-w-screen-xl mx-auto">
       <div className="bg-[#0D0D0D] text-white flex items-center justify-between p-4">
@@ -17,69 +27,20 @@ const Header = () => {
         </div>
 
         {/* Nav Links */}
-        <nav className="hidden md:flex space-x-6">
-          <Link
-            className={`${pathname === "/" ? "active" : ""}  ${
-              inter.className
-            }`}
-            href="/"
-          >
-            Home
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/menu" ? "active" : ""
-            } ${inter.className}`}
-            href="/menu"
-          >
-            Menu
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/blog" ? "active" : ""
-            } ${inter.className}`}
-            href="/blog"
-          >
-            Blog
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/pages" ? "active" : ""
-            } ${inter.className}`}
-            href="/faq"
-          >
-            FAQs
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/about" ? "active" : ""
-            } ${inter.className}`}
-            href="/about"
-          >
-            About
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/shop" ? "active" : ""
-            } ${inter.className}`}
-            href="/shop"
-          >
-            Shop
-          </Link>
-          <Link
-            className={`hover:text-[#FF9F0D] ${
-              pathname === "/signup" ? "active" : ""
-            } ${inter.className}`}
-            href="/signup"
-          >
-            Sign Up
-          </Link>
-        </nav>
+        <div>
+          <Navbar classname="hidden md:flex space-x-6" />
+        </div>
 
         {/* Icons */}
-        <div className="flex items-center space-x-4">
-          <Search />
-          <UserRound />
+        <div className="flex items-center space-x-4 relative">
+          <UserRound onClick={handleProfile} className="cursor-pointer" />
+          {profileActive ? (
+            <div className="absolute top-10 right-10 ">
+              <Profile />
+            </div>
+          ) : (
+            ""
+          )}
           <Link
             className={`hover:text-[#FF9F0D] ${
               pathname === "/cart" ? "active" : ""
@@ -88,6 +49,14 @@ const Header = () => {
           >
             <ShoppingBag />
           </Link>
+          <Menu onClick={hanldeMenu} />
+          {showMenu ? (
+            <div className="absolute top-14 right-0  z-30 bg-black bg-opacity-90 px-8 py-4 border rounded-md">
+              <Navbar classname="flex flex-col gap-8 " />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </header>
