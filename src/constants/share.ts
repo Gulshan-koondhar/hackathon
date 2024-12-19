@@ -11,6 +11,13 @@ import product10 from "../../public/product6.png";
 import product11 from "../../public/product6.png";
 import product12 from "../../public/product6.png";
 import rating from "../../public/Star.png";
+import blog1 from "@/../public/unsplash_lP5MCM6nZ5A (1).png";
+import blog2 from "@/../public/unsplash_MqT0asuoIcU.png";
+import blog3 from "@/../public/unsplash_XoByiBymX20.png";
+import blog4 from "@/../public/unsplash_mAQZ3X_8_l0.png";
+import comment1 from "@/../public/chef1.png";
+import comment2 from "@/../public/chef2.png";
+import comment3 from "@/../public/chef3.png";
 
 export const foods = [
   {
@@ -248,4 +255,76 @@ export const products = [
 
     image: product12,
   },
+];
+
+export const blogs = [
+  {
+    img: blog1,
+    date: "Feb 14, 2022",
+    comment: 3,
+    title: "10 Reasons To Do A Digital Detox Challenge",
+    slug: "10-Reasons-To-Do-A-Digital-Detox-Challenge",
+    desc: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  },
+  {
+    img: blog2,
+    date: "Feb 14, 2022",
+    comment: 3,
+    title: "Traditional Soft Pretzels with Sweet Beer Cheese",
+    slug: "Traditional-Soft-Pretzels-with-Sweet-Beer-Cheese",
+    desc: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  },
+  {
+    img: blog3,
+    date: "Feb 14, 2022",
+    comment: 3,
+    title: "The Ultimate Hangover Burger: Egg in a Hole Burger",
+    slug: "The-Ultimate-Hangover-Burger-Egg-in-a-Hole- Burger",
+    desc: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  },
+  {
+    img: blog4,
+    date: "Feb 14, 2022",
+    comment: 3,
+    title: "My Favorite Easy Black Pizza Toast Recipe",
+    slug: "My-Favorite-Easy-Black-Pizza-Toast-Recipe",
+    desc: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  },
+];
+
+export const blogPost = [
+  {
+    img: blog1,
+    title: "Lorem ipsum dolor sit cingelit, sed do.",
+    date: "June 22, 2020",
+  },
+  {
+    img: blog2,
+    title: "Lorem ipsum dolor sit cingelit, sed do.",
+    date: "June 22, 2020",
+  },
+  {
+    img: blog3,
+    title: "Lorem ipsum dolor sit cingelit, sed do.",
+    date: "June 22, 2020",
+  },
+  {
+    img: blog4,
+    title: "Lorem ipsum dolor sit cingelit, sed do.",
+    date: "June 22, 2020",
+  },
+];
+
+export const blogMenu = [
+  { img: blog1, title: "Chicken Fry", price: 26 },
+  { img: blog2, title: "Burger Food", price: 46 },
+  { img: blog3, title: "Pizza", price: 16 },
+  { img: blog4, title: "Fresh Fruit", price: 36 },
+  { img: blog2, title: "Vegetable", price: 16 },
+];
+
+export const comments = [
+  { img: comment1, name: "MD Sojib Khan" },
+  { img: comment2, name: "MD Moon Khan" },
+  { img: comment3, name: "MD Moon Khan" },
 ];
