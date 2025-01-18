@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -10,7 +10,7 @@ const Card = ({
   sell,
 }: {
   name: string;
-  image: string | StaticImageData;
+  image: string;
   aprice?: number;
   dprice: number;
   sell?: boolean;
@@ -18,7 +18,13 @@ const Card = ({
   return (
     <div className="relative">
       <div className="relative">
-        <Image src={image} alt="" width={300} height={250} />
+        <Image
+          src={image}
+          alt=""
+          width={250}
+          height={250}
+          className="object-cover w-[250px] h-[250px]"
+        />
       </div>
       <div>
         <h1 className={`text-lg font-bold  ${inter.className}`}>{name}</h1>

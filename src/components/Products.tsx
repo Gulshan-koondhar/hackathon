@@ -1,33 +1,48 @@
 import React from "react";
-import { products } from "@/constants/share";
 import Card from "./Card";
 import { Search } from "lucide-react";
-import pagination from "../../public/pagination.png";
+
 import { Inter } from "next/font/google";
 import Categories from "./Categories";
-import Image from "next/image";
+
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
 const inter = Inter({ subsets: ["latin"] });
-const Products = () => {
+const Products = async () => {
+  const query = `*[_type == "food"]{
+  name,available,"currentSlug": slug.current, 
+    "imageUrl": image.asset->url,price,originalPrice
+}`;
+
+  interface IProduct {
+    name: string;
+    available: boolean;
+    currentSlug: string;
+    price: number;
+    originalPrice: number;
+    imageUrl: string;
+  }
+
+  const data = await client.fetch(query);
+
   return (
-    <div className="max-w-screen-xl mx-auto py-4">
-      <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="flex flex-wrap  items-center gap-3">
-          {products.map((product, i) => (
-            <div key={i}>
-              <Link href={`/shop/${product.name}`}>
+    <div className="max-w-screen-xl mx-auto py-4 px-4">
+      <div className="flex flex-col lg:flex-row  justify-between w-full gap-3">
+        <div className="flex flex-wrap gap-2 h-max w-full lg:w-2/3">
+          {data.map((product: IProduct, i: number) => (
+            <div key={i} className="">
+              <Link href={`/shop/${product.currentSlug}`}>
                 <Card
                   name={product.name}
-                  image={product.image}
-                  dprice={product.dprice}
-                  aprice={product.aprice}
-                  sell={product.sell}
+                  image={product.imageUrl}
+                  dprice={product.price}
+                  aprice={product.originalPrice}
                 />
               </Link>
             </div>
           ))}
         </div>
-        <div className="w-[300px] lg:w-[800px] border py-2 px-4">
+        <div className="w-full lg:w-1/3 border py-2 px-4">
           <form action="" className="flex justify-between">
             <input
               type="text"
@@ -40,9 +55,6 @@ const Products = () => {
           </form>
           <Categories />
         </div>
-      </div>
-      <div className="flex justify-center items-center my-8">
-        <Image src={pagination} alt="" width={200} height={50} />
       </div>
     </div>
   );
