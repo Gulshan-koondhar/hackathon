@@ -12,9 +12,9 @@ const ChefPageCard = ({
 }: {
   img: string | StaticImageData;
   name: string;
-  position: string;
-  specialty: string;
-  experience: number;
+  position?: string;
+  specialty?: string;
+  experience?: number;
 }) => {
   return (
     <div className="flex flex-col items-center">
