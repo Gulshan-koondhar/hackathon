@@ -1,7 +1,8 @@
 import { similarProduct } from "@/constants/share";
 import { MoveLeft, MoveRight } from "lucide-react";
 import React from "react";
-import Card from "./Card";
+
+import Card2 from "./Card2";
 
 const SimilarProducts = () => {
   return (
@@ -15,7 +16,7 @@ const SimilarProducts = () => {
       </div>
       <div className="flex flex-wrap gap-3 my-3">
         {similarProduct.map((food, i) => (
-          <Card
+          <Card2
             key={i}
             name={food.name}
             image={food.image}
